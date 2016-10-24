@@ -8,6 +8,13 @@ html, body {
   height: 100%;
 }
 
+.navbar-header{
+  width:100%;
+  height:50px;
+  background-color:#f6f6f6;
+  border-bottom:1px solid #e9e9e9;
+}
+
 .navbar-default {
   font-family: $secondary-font;
   background-color: white;
@@ -19,6 +26,16 @@ html, body {
   letter-spacing: 2px;
   color: $main-blue;
 }
+
+.nav-links{
+  text-align:right;
+  line-height:50px;
+  padding:0px 20px;
+  float:right;
+  color:grey;
+}
+
+
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
@@ -31,4 +48,22 @@ html, body {
 
 .footer {
   height: $footer-height;
+  background-color:#f6f6f6;
+  border-top:1px solid #e9e9e9;
+  padding-top:20px;
+}
+
+.container{
+  padding-top:70px;
+  width:100%;
+}
+
+#idea_form{
+  padding-bottom:20px;
+}
+
+input.submit{
+  padding:5px 20px;
+  font-size:20px;
+  
 }

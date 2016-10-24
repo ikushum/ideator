@@ -1,5 +1,20 @@
 <!DOCTYPE html>
+
+<div id="idea_form">
+<%= simple_form_for Idea.new do |f| %>
+  <%= f.input :description %>
+  <%= f.input :author %>
+  <div style="text-align:center;"><%= f.submit 'Post Idea', class: 'btn btn-primary submit' %></div>
+<% end %>
+</div>
+
 <% @ideas.each do |idea| %>
-  <h3><%= idea.description %></h3>
-  <h4><%= idea.author %></h4>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <blockquote>
+        <p><%= idea.description %></p>
+        <small>by <%= idea.author %></small>
+      </blockquote> 
+    </div>
+  </div>
 <% end %>
